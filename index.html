@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Muhammad Assad Ullah">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENDTERNET: The Last Website on Earth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Glitch overlay -->
+    <div class="glitch-overlay"></div>
+    
+    <!-- Static noise overlay -->
+    <canvas id="static-canvas"></canvas>
+    
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="glitch-text" data-text="ENDTERNET">ENDTERNET</h1>
+            <p class="subtitle">The Last Website on Earth</p>
+            <div class="countdown">
+                <span class="countdown-label">Internet collapses in:</span>
+                <span id="timer" class="countdown-timer">05:00:00</span>
+            </div>
+        </header>
+
+        <!-- System status -->
+        <div class="system-status">
+            <div class="status-bar">
+                <span>System Health: <span id="health">100</span>%</span>
+                <div class="health-bar">
+                    <div id="health-fill" class="health-fill"></div>
+                </div>
+            </div>
+            <div class="warning-text" id="warning">⚠️ ALL SYSTEMS NOMINAL ⚠️</div>
+        </div>
+
+        <!-- Content area -->
+        <main class="content">
+            <div class="info-box">
+                <h2 class="section-title">SITUATION REPORT</h2>
+                <p class="info-text">
+                    The internet is dying. Servers are melting. Databases are crying. 
+                    Memes are evaporating into the void. You are the last user online.
+                </p>
+                <p class="info-text">
+                    Your mission: <span class="highlight">SAVE THE INTERNET</span> by fixing the chaos before everything collapses.
+                </p>
+            </div>
+
+            <!-- Interactive buttons -->
+            <div class="action-buttons">
+                <button class="btn btn-danger" id="panicBtn">🚨 PANIC</button>
+                <button class="btn btn-primary" id="fixBtn">🔧 FIX INTERNET</button>
+                <button class="btn btn-warning" id="rebootBtn">⚡ REBOOT</button>
+                <button class="btn btn-cursed" id="cursedBtn">💀 ???</button>
+            </div>
+
+            <!-- Terminal -->
+            <div class="terminal" id="terminal">
+                <div class="terminal-header">
+                    <span>◉ EMERGENCY CONSOLE</span>
+                    <span class="terminal-close" id="terminalClose">×</span>
+                </div>
+                <div class="terminal-body" id="terminalBody">
+                    <div class="terminal-line">Internet Emergency Response Terminal v0.01</div>
+                    <div class="terminal-line">Type 'help' for available commands</div>
+                    <div class="terminal-line">WARNING: Nothing works anymore</div>
+                    <div class="terminal-line terminal-prompt">
+                        <span class="prompt-symbol">$</span>
+                        <input type="text" id="terminalInput" class="terminal-input" autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chaos log -->
+            <div class="chaos-log" id="chaosLog">
+                <h3>🔥 CHAOS LOG 🔥</h3>
+                <div id="chaosContent" class="chaos-content"></div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+        <p>Built with ❤️ and chaos for CODEPOCALYPSE 2025</p>
+        <p class="footer-small">Website by Muhammad Assad Ullah — CODEPOCALYPSE 2025</p>
+        </footer>
+    </div>
+
+    <!-- Fake error popups -->
+    <div id="errorPopups"></div>
+
+    <!-- Ending scene -->
+    <div class="ending-scene" id="endingScene">
+        <div class="static-screen"></div>
+        <div class="ascii-message">
+            <pre id="asciiArt"></pre>
+            <p class="ending-text">You survived the Endternet.</p>
+            <p class="ending-text">Welcome to <span class="offline-mode">OFFLINE MODE</span></p>
+            <button class="btn btn-restart" id="restartBtn">↻ RESTART THE APOCALYPSE</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
